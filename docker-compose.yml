@@ -1,0 +1,13 @@
+version: '3'
+services:
+  gitbook:
+    build: ./
+    image: barnet/gitbook:0.1
+    container_name: gitbook
+    tty: true
+    volumes:
+      - ./gitbook/:/gitbook/
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    
