@@ -6,6 +6,7 @@ if [ ! -s "/gitbook/SUMMARY.md" ]; then
   gitbook init /gitbook
   echo 'Gitbook templete was generated.'
 else
+  # install plugin
   gitbook install
   echo 'Gitbook templete already exists.'
 fi
